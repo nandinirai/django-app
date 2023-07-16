@@ -1,1 +1,6 @@
 .venv
+poetry.lock
+liftapp/__pycache__
+project/__pycache__
+liftapp/migrations/__pycache__
+db.sqlite3
