@@ -15,7 +15,7 @@ class Elevator(models.Model):
 
 
 class Request(models.Model):
-    elevator = models.ForeignKey(Elevator, on_delete=models.CASCADE)
+    elevator_id = models.ForeignKey(Elevator, on_delete=models.CASCADE)
     floor = models.IntegerField()
     direction = models.CharField(max_length=255)
 
