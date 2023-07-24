@@ -20,4 +20,4 @@ class Request(models.Model):
     direction = models.CharField(max_length=255)
 
     def __str__(self):
-        return f"Request for {self.elevator} to go to floor {self.floor}"
+        return f"Request for {self.elevator_id} to go to floor {self.floor}"
