@@ -10,3 +10,4 @@
 # incase if you don't have poetry run pip install poetry first
 # then run migrations by using the command python manage.py migrate
 # also find the attached file and import it in postman in order to test the apis
+# use thid to run the server on local host 'python manage.py runserver'
