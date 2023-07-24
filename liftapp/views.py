@@ -24,20 +24,6 @@ class ElevatorView(View):
 
         return HttpResponse(elevators.values())
 
-    def post(self, request, elevator_id):
-
-        if elevator_id is None:
-            return HttpResponse("Invalid elevator ID.")
-
-        request_data = request.POST
-        floor = request_data["floor"]
-        direction = request_data["direction"]
-
-        request = Request(elevator_id=elevator_id, floor=floor, direction=direction)
-        request.save()
-
-        return HttpResponse("Request saved successfully.")
-
 
 class RequestView(View):
 
