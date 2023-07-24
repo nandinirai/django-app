@@ -7,7 +7,7 @@ urlpatterns = [
     path("elevators/<int:elevator_id>/requests/", RequestView.as_view()),
     path(
         "elevators/<int:elevator_id>/requests/add/",
-        RequestView.as_view(),
+        RequestView.as_view(http_method_names=['post']),
         name="add_request",
     ),
     path(
